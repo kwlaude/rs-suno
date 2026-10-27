@@ -31,7 +31,7 @@ use crate::ffmpeg::FfmpegAdapter;
 use crate::fs::FsAdapter;
 use crate::http::ReqwestHttp;
 
-const WAV_POLL_ATTEMPTS: u32 = 24;
+const WAV_POLL_ATTEMPTS: u32 = 180;
 const WAV_POLL_INTERVAL: Duration = Duration::from_secs(5);
 
 /// Bound on concurrent manifest stats. Stats are cheap, latency-bound, and hold
